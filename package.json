@@ -1,0 +1,26 @@
+{
+  "name": "iseeu",
+  "version": "1.0.0",
+  "description": "I see you 65",
+  "scripts": {
+    "test": "todo: ...."
+  },
+  "dependencies": {
+    "lodash": "3.10.1",
+    "reflux": "0.2.12"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "webpack-stream": "*",
+    "gulp-webserver": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangwii/isseu2.git"
+  },
+  "author": "Wang Wei, Rex",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wangwii/isseu2/issues"
+  }
+}
