@@ -1,0 +1,39 @@
+* {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &,
+  &:before,
+  &:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  @extend %sans--regular;
+  line-height: 1.5;
+  color: $color_mine_shaft;
+  background: $color_white;
+  font-size: 14px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, audio, canvas, video {
+  display: block;
+}
+
+object {
+  display: inline-block;
+}
+
+input, select, textarea, label, a, p, div, span {
+  @extend %sans--regular;
+}
