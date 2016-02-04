@@ -4,6 +4,7 @@ var clean = require('del');
 var webpack = require('webpack');
 var gulp_webpack = require('webpack-stream');
 var web_connect = require('gulp-connect');
+var karma = require('karma').Server;
 
 var webpack_conf = require('./webpack.config.js');
 
@@ -15,6 +16,12 @@ gulp.task('clean', function(){
     dist_path + '/*',
     '!' + dist_path + '/.git'
   ]);
+});
+
+gulp.task('test', function (done) {
+  new karma({
+    configFile: path.resolve(__dirname + '/karma.config.js')
+  }, done).start();
 });
 
 gulp.task('package', ['clean'], function(){
